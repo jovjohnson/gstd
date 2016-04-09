@@ -1,9 +1,20 @@
-<table class="table">
-  <tbody>
-    <thead>
-      <th>Task</th>
-      <th>Done</th>
-      <th>Date Completed</th>
-    </thead>
-  </tbody>
-</table>
+<center>
+  <h2>YOUR TASKS</h2>
+  <br>
+  <br>
+  <table class="table animated zoomIn">
+    <tbody>
+        <tr>
+          <th>Task</th>
+          <th>Done</th>
+          <th>Date Completed</th>
+        </tr>
+        <tr>
+          <td>{{todo.task}}</td>
+          <td>{{todo.completed}}</td>
+          <td>{{todo.date}}</td>
+        </tr>
+
+    </tbody>
+  </table>
+</center>

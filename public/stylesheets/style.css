@@ -10,7 +10,7 @@ a {
 }
 
 h1 {
-  font-size: 65px;
+  font-size: 105px;
   font-weight: 200;
 }
 
@@ -19,9 +19,17 @@ form {
 }
 
 #username {
-  color: cornflowerblue;
+  color: white;
+}
+
+#password {
+  color: white;
 }
 
 label {
+  color: #7CA2A5;
+}
+
+h2 {
   color: #7CA2A5;
 }

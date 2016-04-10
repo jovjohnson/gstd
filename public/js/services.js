@@ -44,3 +44,22 @@ app.service('UserService', function() {
     this._id = null;
   };
 });
+
+app.service('TodoService', function($http) {
+
+  this.addTodo = function(newTodo) {
+    return $http.post('users/todo', newTodo);
+  };
+
+  this.removeTodo = function(todoID) {
+    return $http.delete(`/users/todo/${todoID}`);
+  }
+
+  this.todos = [];
+
+  this.init = function() {
+    return $http.get('/users/todos');
+
+  };
+
+});

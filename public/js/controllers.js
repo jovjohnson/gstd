@@ -42,5 +42,11 @@ app.controller('navCtrl', function($scope, UserService, AuthService) {
   });
 });
 
-app.controller('todoCtrl', function($scope, $state, UserService) {
+app.controller('todoCtrl', function($scope, UserService, TodoService) {
+  $scope.$watch(function() {
+    return TodoService.todos;
+  }, function(todos) {
+    console.log('');
+    $scope.todos = todos;
+  });
 });
